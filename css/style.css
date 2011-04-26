@@ -1,35 +1,35 @@
-html, body, div, span,
-h1, h2, h3, h4, h5, h6,
-p, blockquote, code, img,
-ol, ul, li, form, input,
-select, button, article,
-aside, canvas, footer, header,
-hgroup, menu, nav, section,
-time, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font: inherit;
-	font-size: 100%;
-	vertical-align: baseline;
+* {
+    margin: 0;
+    padding: 0;
 }
 
+/*highlight color*/
+::selection {
+    background: #fef68a;
+}
+
+::-moz-selection {
+    background: #fef68a;
+}
+
+a img{
+    border: none;
+}
+
+/*remove default input and link outlines*/
 input:focus, button:focus,
-select:focus {
-	outline: 0;
+select:focus, a:active,
+a:focus, a:visited {
+    outline: none;
+    -moz-outline-style: none;
 }
 
-article, aside, footer,
-header, hgroup, menu,
-nav, section {
-	display: block;
-}
-
-.clear {
-	clear: both;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
 }
 
 body {
-	text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
 }
