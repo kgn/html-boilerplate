@@ -16,10 +16,8 @@ a img{
     border: none;
 }
 
-/*remove default input and link outlines*/
-input:focus, button:focus,
-select:focus, a:active,
-a:focus, a:visited {
+/*remove link outlines*/
+a:active, a:focus, a:visited {
     outline: none;
     -moz-outline-style: none;
 }
