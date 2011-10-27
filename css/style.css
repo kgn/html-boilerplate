@@ -30,6 +30,24 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     text-rendering: optimizeLegibility;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, p, h1, h2, h3, h4, h5, h6, span,
+blockquote, pre, strong, em, ol, ul, li {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    user-select: text;
 }
 
 .unselectable {
