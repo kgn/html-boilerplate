@@ -64,3 +64,37 @@ blockquote, pre, strong, em, ol, ul, li {
     -o-user-select: text;
     user-select: text;
 }
+
+@media screen and (max-width: 480px) {
+    #logo{
+        font-size: 32px;
+        top: 40px;
+        width: 360px;
+        letter-spacing: 10px;
+    }
+    
+    #sections{
+        width: 300px;
+        margin-bottom: 40px;
+        display: inline;
+        position: absolute;
+        top: 120px;
+        right: 0;
+        left: 0;
+    }
+    
+    #sections .card{
+        float: none;
+        margin-bottom: 80px;
+    }
+}
+
+/* iPhone */
+@media screen and (max-width: 480px) {
+
+}
+
+/* iPad */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+}
