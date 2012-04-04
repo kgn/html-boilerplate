@@ -8,7 +8,20 @@
     <meta name="author" content="David Keegan">
     <meta name="description" content="">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" id="viewport">
+    <script src="modernizr.js"></script>
+    <script>
+        (function(){
+            var iPhone = 'only screen and (max-device-width: 480px)';
+            var iPad = 'only screen and (min-device-width: 768px) and (max-device-width: 1024px)';
+            if(Modernizr.mq(iPhone)){
+                //document.getElementById("viewport").setAttribute('content', 'width=400');
+            }else if(Modernizr.mq(iPad)){
+                //document.getElementById("viewport").setAttribute('content', 'width=1100');
+            }
+        })();
+    </script>
+    
     <!--<meta name="apple-mobile-web-app-capable" content="yes" />-->
     <!--<link rel="apple-touch-icon-precomposed" href="images/app_icon.png" />-->
     <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/app_icon_72.png" />-->
@@ -16,14 +29,9 @@
     <!--<link rel="apple-touch-startup-image" href="images/app_startup_screen.png">-->
 
     <!--<link href="images/favicon.png" rel="shortcut icon" type="image/png">-->
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-    <script src="js/jquery.script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="jquery.script.js"></script>
     <script>
         $(function(){
     
